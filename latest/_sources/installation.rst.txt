@@ -6,11 +6,11 @@ Installation
 
 The easiest methods for installing pyproj are:
 
-1. Use pip to install the binary wheels on `PyPI <https://pypi.org/project/pyproj/>`__:
+1. Use pip to install the binary wheels from `PyPI <https://pypi.org/project/pyproj/>`__:
 
   .. code-block:: bash
 
-      pip install pyproj
+      python -m pip install pyproj
 
   .. note:: Linux (manylinux2014) wheels require pip 19.3+
 
@@ -53,6 +53,12 @@ The easiest methods for installing pyproj are:
 If these installation methods do not meet your needs, the section below provides further instructions
 for getting setup.
 
+3. Install nightly wheels from anaconda:
+
+.. code-block:: python
+
+    python -m pip install pyproj --pre --extra-index-url https://pypi.anaconda.org/scientific-python-nightly-wheels/simple
+
 Transformation Grids
 =====================
 
@@ -76,6 +82,7 @@ pyproj         PROJ
 3.3            8.0-9.1
 3.4+           8.2+
 3.5+           9+
+3.7+           9.2+
 ============   ============
 
 Setup PROJ

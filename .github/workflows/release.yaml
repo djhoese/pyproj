@@ -2,7 +2,7 @@ name: Wheels & sdist
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, debug-wheels ]
   release:
     types: [ released, prereleased ]
   pull_request:  # also build on PRs touching this file

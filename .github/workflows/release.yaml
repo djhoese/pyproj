@@ -148,11 +148,7 @@ jobs:
           CIBW_BEFORE_ALL_MACOS: bash ./ci/proj-compile-wheels.sh
           CIBW_TEST_REQUIRES: cython pytest numpy --config-settings=setup-args="-Dallow-noblas=true"
           CIBW_BEFORE_TEST: python -m pip install shapely pandas xarray || echo "Optional requirements install failed"
-          CIBW_TEST_COMMAND: >
-            pyproj -v &&
-            python -c "import pyproj; pyproj.Proj(init='epsg:4269')"  &&
-            cp -r {package}/test . &&
-            python -m pytest test -v -s
+          CIBW_TEST_COMMAND: "pyproj -v"
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4

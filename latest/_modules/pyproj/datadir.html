@@ -1,14 +1,14 @@
 <!doctype html>
 <html class="no-js" lang="en" data-content_root="../../">
-  <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
-        <link rel="prefetch" href="../../_static/logo.png" as="image" />
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html">
+        <link rel="prefetch" href="../../_static/logo.png" as="image">
 
-    <link rel="shortcut icon" href="../../_static/icon.png"/><!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
+    <link rel="shortcut icon" href="../../_static/icon.png"><!-- Generated with Sphinx 9.0.4 and Furo 2025.12.19 -->
         <title>pyproj.datadir - pyproj 3.7.3.dev0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=20074c1a" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=25af2a20" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
     
@@ -22,14 +22,14 @@
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #2b2b2b;
-  --color-code-foreground: #f8f8f2;
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #2b2b2b;
-  --color-code-foreground: #f8f8f2;
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
   
       }
     }
@@ -144,14 +144,10 @@
   </symbol>
 </svg>
 
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
-<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
-<label class="overlay sidebar-overlay" for="__navigation">
-  <div class="visually-hidden">Hide navigation sidebar</div>
-</label>
-<label class="overlay toc-overlay" for="__toc">
-  <div class="visually-hidden">Hide table of contents sidebar</div>
-</label>
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
 
 <a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
 
@@ -161,8 +157,7 @@
   <header class="mobile-header">
     <div class="header-left">
       <label class="nav-overlay-icon" for="__navigation">
-        <div class="visually-hidden">Toggle site navigation sidebar</div>
-        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
       </label>
     </div>
     <div class="header-center">
@@ -170,8 +165,7 @@
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
-        <button class="theme-toggle">
-          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
           <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
           <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
           <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
@@ -179,8 +173,7 @@
         </button>
       </div>
       <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
-        <div class="visually-hidden">Toggle table of contents sidebar</div>
-        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
   </header>
@@ -206,8 +199,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../../examples.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../transformation_grids.html">Transformation Grids</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../gotchas.html">Gotchas/FAQ</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../api/index.html">API Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of API Documentation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../api/crs/index.html">CRS module API Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of CRS module API Documentation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../api/index.html">API Documentation</a><input aria-label="Toggle navigation of API Documentation" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../api/crs/index.html">CRS module API Documentation</a><input aria-label="Toggle navigation of CRS module API Documentation" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../api/crs/crs.html">CRS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../api/crs/coordinate_system.html">Coordinate Systems</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../api/crs/coordinate_operation.html">Coordinate Operations</a></li>
@@ -258,8 +251,7 @@
         </a>
         <div class="content-icon-container">
           <div class="theme-toggle-container theme-toggle-content">
-            <button class="theme-toggle">
-              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
               <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
               <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
               <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
@@ -267,15 +259,14 @@
             </button>
           </div>
           <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
-            <div class="visually-hidden">Toggle table of contents sidebar</div>
-            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
         <article role="main" id="furo-main-content">
           <h1>Source code for pyproj.datadir</h1><div class="highlight"><pre>
-<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span></span><span class="sd">"""</span>
 <span class="sd">Module for managing the PROJ data directory.</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 
 <span class="c1"># pylint: disable=global-statement</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
@@ -289,21 +280,21 @@
 <span class="p">)</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">pyproj.exceptions</span><span class="w"> </span><span class="kn">import</span> <span class="n">DataDirError</span>
 
-<span class="n">_USER_PROJ_DATA</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="n">_VALIDATED_PROJ_DATA</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">_USER_PROJ_DATA</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># pylint: disable=invalid-name</span>
+<span class="n">_VALIDATED_PROJ_DATA</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># pylint: disable=invalid-name</span>
 
 
 <div class="viewcode-block" id="set_data_dir">
 <a class="viewcode-back" href="../../api/datadir.html#pyproj.datadir.set_data_dir">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">set_data_dir</span><span class="p">(</span><span class="n">proj_data_dir</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Set the data directory for PROJ to use.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
 <span class="sd">    proj_data_dir: str | Path</span>
 <span class="sd">        The path to the PROJ data directory.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="k">global</span> <span class="n">_USER_PROJ_DATA</span>
     <span class="k">global</span> <span class="n">_VALIDATED_PROJ_DATA</span>
     <span class="n">_USER_PROJ_DATA</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">proj_data_dir</span><span class="p">)</span>
@@ -319,14 +310,14 @@
 <div class="viewcode-block" id="append_data_dir">
 <a class="viewcode-back" href="../../api/datadir.html#pyproj.datadir.append_data_dir">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">append_data_dir</span><span class="p">(</span><span class="n">proj_data_dir</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Add an additional data directory for PROJ to use.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
 <span class="sd">    proj_data_dir: str | Path</span>
 <span class="sd">        The path to the PROJ data directory.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="n">set_data_dir</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">pathsep</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">get_data_dir</span><span class="p">(),</span> <span class="nb">str</span><span class="p">(</span><span class="n">proj_data_dir</span><span class="p">)]))</span></div>
 
 
@@ -334,7 +325,7 @@
 <div class="viewcode-block" id="get_data_dir">
 <a class="viewcode-back" href="../../api/datadir.html#pyproj.datadir.get_data_dir">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">get_data_dir</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    The order of preference for the data directory is:</span>
 
 <span class="sd">    1. The one set by pyproj.datadir.set_data_dir (if exists &amp; valid)</span>
@@ -348,20 +339,20 @@
 <span class="sd">    str:</span>
 <span class="sd">        The valid data directory.</span>
 
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="c1"># to avoid re-validating</span>
     <span class="k">global</span> <span class="n">_VALIDATED_PROJ_DATA</span>
     <span class="k">if</span> <span class="n">_VALIDATED_PROJ_DATA</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">_VALIDATED_PROJ_DATA</span>
-    <span class="n">internal_datadir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">absolute</span><span class="p">()</span><span class="o">.</span><span class="n">parent</span> <span class="o">/</span> <span class="s2">&quot;proj_dir&quot;</span> <span class="o">/</span> <span class="s2">&quot;share&quot;</span> <span class="o">/</span> <span class="s2">&quot;proj&quot;</span>
-    <span class="n">proj_lib_dirs</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;PROJ_DATA&quot;</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;PROJ_LIB&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">))</span>
-    <span class="n">prefix_datadir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">prefix</span><span class="p">,</span> <span class="s2">&quot;share&quot;</span><span class="p">,</span> <span class="s2">&quot;proj&quot;</span><span class="p">)</span>
-    <span class="n">conda_windows_prefix_datadir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">prefix</span><span class="p">,</span> <span class="s2">&quot;Library&quot;</span><span class="p">,</span> <span class="s2">&quot;share&quot;</span><span class="p">,</span> <span class="s2">&quot;proj&quot;</span><span class="p">)</span>
+    <span class="n">internal_datadir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">absolute</span><span class="p">()</span><span class="o">.</span><span class="n">parent</span> <span class="o">/</span> <span class="s2">"proj_dir"</span> <span class="o">/</span> <span class="s2">"share"</span> <span class="o">/</span> <span class="s2">"proj"</span>
+    <span class="n">proj_lib_dirs</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"PROJ_DATA"</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"PROJ_LIB"</span><span class="p">,</span> <span class="s2">""</span><span class="p">))</span>
+    <span class="n">prefix_datadir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">prefix</span><span class="p">,</span> <span class="s2">"share"</span><span class="p">,</span> <span class="s2">"proj"</span><span class="p">)</span>
+    <span class="n">conda_windows_prefix_datadir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">prefix</span><span class="p">,</span> <span class="s2">"Library"</span><span class="p">,</span> <span class="s2">"share"</span><span class="p">,</span> <span class="s2">"proj"</span><span class="p">)</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">valid_data_dir</span><span class="p">(</span><span class="n">potential_data_dir</span><span class="p">):</span>
         <span class="k">if</span> <span class="p">(</span>
             <span class="n">potential_data_dir</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
-            <span class="ow">and</span> <span class="n">Path</span><span class="p">(</span><span class="n">potential_data_dir</span><span class="p">,</span> <span class="s2">&quot;proj.db&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span>
+            <span class="ow">and</span> <span class="n">Path</span><span class="p">(</span><span class="n">potential_data_dir</span><span class="p">,</span> <span class="s2">"proj.db"</span><span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span>
         <span class="p">):</span>
             <span class="k">return</span> <span class="kc">True</span>
         <span class="k">return</span> <span class="kc">False</span>
@@ -385,20 +376,20 @@
     <span class="k">elif</span> <span class="n">valid_data_dir</span><span class="p">(</span><span class="n">conda_windows_prefix_datadir</span><span class="p">):</span>
         <span class="n">_VALIDATED_PROJ_DATA</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">conda_windows_prefix_datadir</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">proj_exe</span> <span class="o">=</span> <span class="n">shutil</span><span class="o">.</span><span class="n">which</span><span class="p">(</span><span class="s2">&quot;proj&quot;</span><span class="p">,</span> <span class="n">path</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">prefix</span><span class="p">)</span>
+        <span class="n">proj_exe</span> <span class="o">=</span> <span class="n">shutil</span><span class="o">.</span><span class="n">which</span><span class="p">(</span><span class="s2">"proj"</span><span class="p">,</span> <span class="n">path</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">prefix</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">proj_exe</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="n">proj_exe</span> <span class="o">=</span> <span class="n">shutil</span><span class="o">.</span><span class="n">which</span><span class="p">(</span><span class="s2">&quot;proj&quot;</span><span class="p">)</span>
+            <span class="n">proj_exe</span> <span class="o">=</span> <span class="n">shutil</span><span class="o">.</span><span class="n">which</span><span class="p">(</span><span class="s2">"proj"</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">proj_exe</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="n">system_proj_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">proj_exe</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">parent</span> <span class="o">/</span> <span class="s2">&quot;share&quot;</span> <span class="o">/</span> <span class="s2">&quot;proj&quot;</span>
+            <span class="n">system_proj_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">proj_exe</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">parent</span> <span class="o">/</span> <span class="s2">"share"</span> <span class="o">/</span> <span class="s2">"proj"</span>
             <span class="k">if</span> <span class="n">valid_data_dir</span><span class="p">(</span><span class="n">system_proj_dir</span><span class="p">):</span>
                 <span class="n">_VALIDATED_PROJ_DATA</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">system_proj_dir</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">_VALIDATED_PROJ_DATA</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
         <span class="k">raise</span> <span class="n">DataDirError</span><span class="p">(</span>
-            <span class="s2">&quot;Valid PROJ data directory not found. &quot;</span>
-            <span class="s2">&quot;Either set the path using the environmental variable &quot;</span>
-            <span class="s2">&quot;PROJ_DATA (PROJ 9.1+) | PROJ_LIB (PROJ&lt;9.1) or &quot;</span>
-            <span class="s2">&quot;with `pyproj.datadir.set_data_dir`.&quot;</span>
+            <span class="s2">"Valid PROJ data directory not found. "</span>
+            <span class="s2">"Either set the path using the environmental variable "</span>
+            <span class="s2">"PROJ_DATA (PROJ 9.1+) | PROJ_LIB (PROJ&lt;9.1) or "</span>
+            <span class="s2">"with `pyproj.datadir.set_data_dir`."</span>
         <span class="p">)</span>
     <span class="k">return</span> <span class="n">_VALIDATED_PROJ_DATA</span></div>
 
@@ -435,8 +426,8 @@
     </aside>
   </div>
 </div><script src="../../_static/documentation_options.js?v=786b3f3f"></script>
-    <script src="../../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
     </body>
 </html>

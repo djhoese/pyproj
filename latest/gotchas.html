@@ -1,15 +1,15 @@
 <!doctype html>
 <html class="no-js" lang="en" data-content_root="./">
-  <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="API Documentation" href="api/index.html" /><link rel="prev" title="Transformation Grids" href="transformation_grids.html" />
-        <link rel="prefetch" href="_static/logo.png" as="image" />
+<link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html"><link rel="next" title="API Documentation" href="api/index.html"><link rel="prev" title="Transformation Grids" href="transformation_grids.html">
+        <link rel="prefetch" href="_static/logo.png" as="image">
 
-    <link rel="shortcut icon" href="_static/icon.png"/><!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
+    <link rel="shortcut icon" href="_static/icon.png"><!-- Generated with Sphinx 9.0.4 and Furo 2025.12.19 -->
         <title>Gotchas/FAQ - pyproj 3.7.3.dev0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=20074c1a" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=25af2a20" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
     
     
@@ -23,14 +23,14 @@
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #2b2b2b;
-  --color-code-foreground: #f8f8f2;
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #2b2b2b;
-  --color-code-foreground: #f8f8f2;
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
   
       }
     }
@@ -145,14 +145,10 @@
   </symbol>
 </svg>
 
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
-<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
-<label class="overlay sidebar-overlay" for="__navigation">
-  <div class="visually-hidden">Hide navigation sidebar</div>
-</label>
-<label class="overlay toc-overlay" for="__toc">
-  <div class="visually-hidden">Hide table of contents sidebar</div>
-</label>
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
 
 <a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
 
@@ -162,8 +158,7 @@
   <header class="mobile-header">
     <div class="header-left">
       <label class="nav-overlay-icon" for="__navigation">
-        <div class="visually-hidden">Toggle site navigation sidebar</div>
-        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
       </label>
     </div>
     <div class="header-center">
@@ -171,8 +166,7 @@
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
-        <button class="theme-toggle">
-          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
           <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
           <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
           <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
@@ -180,8 +174,7 @@
         </button>
       </div>
       <label class="toc-overlay-icon toc-header-icon" for="__toc">
-        <div class="visually-hidden">Toggle table of contents sidebar</div>
-        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
   </header>
@@ -207,8 +200,8 @@
 <li class="toctree-l1"><a class="reference internal" href="examples.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transformation_grids.html">Transformation Grids</a></li>
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Gotchas/FAQ</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="api/index.html">API Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of API Documentation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="api/crs/index.html">CRS module API Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of CRS module API Documentation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="api/index.html">API Documentation</a><input aria-label="Toggle navigation of API Documentation" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="api/crs/index.html">CRS module API Documentation</a><input aria-label="Toggle navigation of CRS module API Documentation" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="api/crs/crs.html">CRS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="api/crs/coordinate_system.html">Coordinate Systems</a></li>
 <li class="toctree-l3"><a class="reference internal" href="api/crs/coordinate_operation.html">Coordinate Operations</a></li>
@@ -265,8 +258,7 @@
   </a>
 </div>
 <div class="theme-toggle-container theme-toggle-content">
-            <button class="theme-toggle">
-              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
               <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
               <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
               <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
@@ -274,8 +266,7 @@
             </button>
           </div>
           <label class="toc-overlay-icon toc-content-icon" for="__toc">
-            <div class="visually-hidden">Toggle table of contents sidebar</div>
-            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
         <article role="main" id="furo-main-content">
@@ -285,7 +276,7 @@
 <dl class="simple">
 <dt>Also see:</dt><dd><ul class="simple">
 <li><p><a class="reference internal" href="examples.html#examples"><span class="std std-ref">Getting Started</span></a></p></li>
-<li><p><a class="reference external" href="https://docs.xarray.dev/en/stable/get-help/faq.html#faq" title="(in xarray v2025.7.2)"><span class="xref std std-ref">PROJ FAQ</span></a></p></li>
+<li><p><a class="reference external" href="https://docs.xarray.dev/en/stable/get-help/faq.html#faq" title="(in xarray v2026.7.0)"><span class="xref std std-ref">PROJ FAQ</span></a></p></li>
 </ul>
 </dd>
 </dl>
@@ -320,7 +311,7 @@ in future major version of PROJ for storing CRS information.</p>
 in future versions of PROJ. Also, if you use the <cite>+init</cite> syntax,
 you may have problems initializing projections when the other syntax works.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">pyproj</span><span class="w"> </span><span class="kn">import</span> <span class="n">CRS</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">CRS</span><span class="p">(</span><span class="s2">&quot;ESRI:54009&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">CRS</span><span class="p">(</span><span class="s2">"ESRI:54009"</span><span class="p">)</span>
 <span class="go">&lt;Projected CRS: ESRI:54009&gt;</span>
 <span class="go">Name: World_Mollweide</span>
 <span class="go">Axis Info [cartesian]:</span>
@@ -336,7 +327,7 @@ you may have problems initializing projections when the other syntax works.</p>
 <span class="go">- Ellipsoid: WGS 84</span>
 <span class="go">- Prime Meridian: Greenwich</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="n">CRS</span><span class="p">(</span><span class="s2">&quot;+init=ESRI:54009&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">CRS</span><span class="p">(</span><span class="s2">"+init=ESRI:54009"</span><span class="p">)</span>
 <span class="gp">...</span>
 <span class="go">pyproj.exceptions.CRSError: Invalid projection: +init=ESRI:54009 +type=crs: (Internal Proj Error: proj_create: cannot expand +init=ESRI:54009 +type=crs)</span>
 </pre></div>
@@ -352,7 +343,7 @@ shifts.</p>
 <p>You likely want to start from <cite>EPSG:4326</cite> (WGS84) for coordinates as
 latitude and longitude.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">pyproj</span><span class="w"> </span><span class="kn">import</span> <span class="n">CRS</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">crs_4326</span> <span class="o">=</span> <span class="n">CRS</span><span class="p">(</span><span class="s2">&quot;WGS84&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">crs_4326</span> <span class="o">=</span> <span class="n">CRS</span><span class="p">(</span><span class="s2">"WGS84"</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">crs_4326</span>
 <span class="go">&lt;Geographic 2D CRS: EPSG:4326&gt;</span>
 <span class="go">Name: WGS 84</span>
@@ -370,7 +361,7 @@ latitude and longitude.</p>
 <p>Then, use the <a class="reference internal" href="api/transformer.html#pyproj.transformer.Transformer" title="pyproj.transformer.Transformer"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyproj.transformer.Transformer</span></code></a> to transform from latitude
 and longitude to your projection as you might have a projection with a different
 datum.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">crs_proj</span> <span class="o">=</span> <span class="n">CRS</span><span class="p">(</span><span class="s2">&quot;EPSG:28992&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">crs_proj</span> <span class="o">=</span> <span class="n">CRS</span><span class="p">(</span><span class="s2">"EPSG:28992"</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">crs_proj</span>
 <span class="go">&lt;Projected CRS: EPSG:28992&gt;</span>
 <span class="go">Name: Amersfoort / RD New</span>
@@ -398,7 +389,7 @@ datum.</p>
 from the projected CRS with the same datum to do the transformation,
 which may not be what you want.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">pyproj</span><span class="w"> </span><span class="kn">import</span> <span class="n">Proj</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Proj</span><span class="p">(</span><span class="s1">&#39;epsg:28992&#39;</span><span class="p">)(</span><span class="mf">5.068913</span><span class="p">,</span> <span class="mf">52.067567</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Proj</span><span class="p">(</span><span class="s1">'epsg:28992'</span><span class="p">)(</span><span class="mf">5.068913</span><span class="p">,</span> <span class="mf">52.067567</span><span class="p">)</span>
 <span class="go">(133148.22970574044, 453192.24450392975)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">transg</span> <span class="o">=</span> <span class="n">Transformer</span><span class="o">.</span><span class="n">from_crs</span><span class="p">(</span><span class="n">crs_proj</span><span class="o">.</span><span class="n">geodetic_crs</span><span class="p">,</span> <span class="n">crs_proj</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">transg</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="mf">52.067567</span><span class="p">,</span> <span class="mf">5.068913</span><span class="p">)</span>
@@ -412,8 +403,8 @@ which may not be what you want.</p>
 <p>The reason that the EPSG code does not appear with the CRS initialized with
 the <cite>init=</cite> syntax is that the CRS are different.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">pyproj</span><span class="w"> </span><span class="kn">import</span> <span class="n">CRS</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">crs_deprecated</span> <span class="o">=</span> <span class="n">CRS</span><span class="p">(</span><span class="n">init</span><span class="o">=</span><span class="s2">&quot;epsg:4544&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">crs</span> <span class="o">=</span> <span class="n">CRS</span><span class="p">(</span><span class="s2">&quot;EPSG:4544&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">crs_deprecated</span> <span class="o">=</span> <span class="n">CRS</span><span class="p">(</span><span class="n">init</span><span class="o">=</span><span class="s2">"epsg:4544"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">crs</span> <span class="o">=</span> <span class="n">CRS</span><span class="p">(</span><span class="s2">"EPSG:4544"</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">crs</span> <span class="o">==</span> <span class="n">crs_deprecated</span>
 <span class="go">False</span>
 </pre></div>
@@ -469,12 +460,12 @@ they are not.</p>
 to the PROJ/WKT string, then you can reduce your min_confidence to a
 threshold you are comfortable with.</p>
 <p>Here is an example of that:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">crs_deprecated</span> <span class="o">=</span> <span class="n">CRS</span><span class="p">(</span><span class="s2">&quot;+init=epsg:4326&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">crs_deprecated</span> <span class="o">=</span> <span class="n">CRS</span><span class="p">(</span><span class="s2">"+init=epsg:4326"</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">crs_deprecated</span><span class="o">.</span><span class="n">to_epsg</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">crs_deprecated</span><span class="o">.</span><span class="n">to_epsg</span><span class="p">(</span><span class="mi">70</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">crs_deprecated</span><span class="o">.</span><span class="n">to_epsg</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 <span class="go">4326</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">crs_latlon</span> <span class="o">=</span> <span class="n">CRS</span><span class="p">(</span><span class="s2">&quot;+proj=latlon&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">crs_latlon</span> <span class="o">=</span> <span class="n">CRS</span><span class="p">(</span><span class="s2">"+proj=latlon"</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">crs_latlon</span><span class="o">.</span><span class="n">to_epsg</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">crs_latlon</span><span class="o">.</span><span class="n">to_epsg</span><span class="p">(</span><span class="mi">70</span><span class="p">)</span>
 <span class="go">4326</span>
@@ -529,15 +520,15 @@ are deprecated.</p>
 <p>pyproj 1 style:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">functools</span><span class="w"> </span><span class="kn">import</span> <span class="n">partial</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">pyproj</span><span class="w"> </span><span class="kn">import</span> <span class="n">Proj</span><span class="p">,</span> <span class="n">transform</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">proj_4326</span> <span class="o">=</span> <span class="n">Proj</span><span class="p">(</span><span class="n">init</span><span class="o">=</span><span class="s2">&quot;epsg:4326&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">proj_3857</span> <span class="o">=</span> <span class="n">Proj</span><span class="p">(</span><span class="n">init</span><span class="o">=</span><span class="s2">&quot;epsg:3857&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">proj_4326</span> <span class="o">=</span> <span class="n">Proj</span><span class="p">(</span><span class="n">init</span><span class="o">=</span><span class="s2">"epsg:4326"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">proj_3857</span> <span class="o">=</span> <span class="n">Proj</span><span class="p">(</span><span class="n">init</span><span class="o">=</span><span class="s2">"epsg:3857"</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">transformer</span> <span class="o">=</span> <span class="n">partial</span><span class="p">(</span><span class="n">transform</span><span class="p">,</span> <span class="n">proj_4326</span><span class="p">,</span> <span class="n">proj_3857</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">transformer</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>pyproj 2 style:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">pyproj</span><span class="w"> </span><span class="kn">import</span> <span class="n">Transformer</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">transformer</span> <span class="o">=</span> <span class="n">Transformer</span><span class="o">.</span><span class="n">from_crs</span><span class="p">(</span><span class="s2">&quot;EPSG:4326&quot;</span><span class="p">,</span> <span class="s2">&quot;EPSG:3857&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">transformer</span> <span class="o">=</span> <span class="n">Transformer</span><span class="o">.</span><span class="n">from_crs</span><span class="p">(</span><span class="s2">"EPSG:4326"</span><span class="p">,</span> <span class="s2">"EPSG:3857"</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">transformer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -619,8 +610,8 @@ are deprecated.</p>
     </aside>
   </div>
 </div><script src="_static/documentation_options.js?v=786b3f3f"></script>
-    <script src="_static/doctools.js?v=9bcbadda"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/scripts/furo.js?v=46bd48cc"></script>
     </body>
 </html>

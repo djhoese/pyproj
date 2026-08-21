@@ -3,7 +3,21 @@ Change Log
 
 Latest
 ------
-
+- WHL: Wheels contain PROJ 9.7.1 (pull #1573)
+- WHL: Upgrade from MacOS 13 to MacOS 15 (X86_64) wheels (issue #1532 & #1543)
+- ENH: Add :meth:`database.query_geodetic_crs_from_datum` (pull #1390)
+- ENH: Added crs_extent_use kwarg to :class:`pyproj.transformer.TransformerGroup` aligning with PROJ CLI --crs-extent-use
+- ENH: Added :class:`pyproj.enums.CRSExtentUse` enum for TransformerGroup ``crs_extent_use`` kwarg
+- ENH: Added pivot_crs kwarg to :class:`pyproj.transformer.TransformerGroup` mirroring PROJ CLI ``--pivot-crs``
+- ENH: Added :class:`pyproj.enums.IntermediateCRSUse` to support TransformerGroup ``pivot_crs`` kwarg
+- ENH: Added grid_check kwarg to :class:`pyproj.transformer.TransformerGroup` mirroring PROJ CLI ``--grid-check``
+- ENH: Added :class:`pyproj.enums.GridAvailabilityUse` enum for TransformerGroup ``grid_check`` kwarg
+- ENH: Added always_xy kwarg to :meth:`pyproj.transformer.Transformer.from_pipeline`
+- DOC: Update fiona CRS compatibility for fiona 1.9+ (issue #1360)
+- BUG: Clear CONTEXT_THREAD_KEY when destroying PJ_CONTEXT (pull #1541)
+- BUG: Default skew angle for CF grid mapping oblique mercator to 90 (issue #1506)
+- BLD: update build-time dependencies
+- PERF: Optimize single point transformations and remove typecast warning (issue #1309)
 
 3.7.2
 -----
@@ -314,7 +328,7 @@ Latest
 2.2.1
 ~~~~~
 * Added :meth:`pyproj.show_versions` (issue #334)
-* Added fix for whitepace around '=' in PROJ strings (issue #345)
+* Added fix for whitespace around '=' in PROJ strings (issue #345)
 * Update version check in `setup.py` (issue #323)
 * Add "stable" doc site pointing to latest release (issue #347, pull #348)
 * Deprecate `Proj.proj_version` (pull #337)
